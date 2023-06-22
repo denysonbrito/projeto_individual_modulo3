@@ -1,0 +1,21 @@
+1. Quais são as entidades necessárias?
+Empresas parceiras, tecnologias utilizadas, departamento, colaborador e resilia consulta.
+
+2. Quais são os principais campos e seus respectivos tipos?
+
+Empresas Parceiras = ID (INT), Nome (CHAR), CNPJ (INT), E-mail (CHAR).
+Tecnologias Utilizadas = ID (INT), Nome programa/tecnologia (CHAR).
+Departamento =  ID (INT), Área de negócio (CHAR).
+Colaborador = ID (INT), Nome do colaborador (CHAR), Função (CHAR), Telefone (INT), CPF (INT), E-MAIL (CHAR).
+Resilia Consulta = Data (DATE), ID_Colaborador (INT), ID_Empresa Parceira (INT), ID_Tecnologia Utilizada (INT), ID_Área de negócio (INT).
+
+3. Como essas entidades estão relacionadas?
+
+Empresas Parceiras 1 para N Resilia Consulta
+Tecnologias Utilizadas 1 para N Resilia Consulta
+Departamento 1 para N Resilia Consulta
+Colaborador  1 para N Resilia Consulta
+
+4. Simule 2 registros para cada entidade.
+1, ifood, 011111111111111, ifood@ifood.com.br, 1, BIG DATA, 1, T.I, 1, Henrique Saldanha, gerente de dados, 21911111111, 11111111111, henrique.saldanha@ifood.com.br, 20/06/23, 1, 1, 1, 1
+2, rappi, 022222222222222, rappi@rappi.com.br, 2, MACHINE LEARNING,  INTELIGÊNCIA ARTIFICIAL (IA), 2, Felipe Nunes, Engenheiro de Machine Learning, 11 922222222, 69422222222, fellipe.nunes@rappi.com.br, 21/06/23, 2, 2, 2, 2
